@@ -15,8 +15,8 @@ RUN curl -O ${TERRAFORM_URL} && \
     rm terraform_${TERRAFORM_VERSION}_linux_amd64.zip
 
 # https://pypi.org/project/awscli/
-RUN pip install awscli==1.18.116
+RUN pip install awscli==1.18.157
 
 # https://docs.aws.amazon.com/eks/latest/userguide/install-aws-iam-authenticator.html
-RUN curl -s -L -o /usr/bin/aws-iam-authenticator https://amazon-eks.s3.us-west-2.amazonaws.com/1.17.7/2020-07-08/bin/linux/amd64/aws-iam-authenticator && \
+RUN curl -s -L -o /usr/bin/aws-iam-authenticator https://amazon-eks.s3.us-west-2.amazonaws.com/1.17.9/2020-08-04/bin/linux/amd64/aws-iam-authenticator && \
     chmod +x /usr/bin/aws-iam-authenticator
