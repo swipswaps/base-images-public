@@ -1,5 +1,5 @@
 # https://hub.docker.com/r/google/cloud-sdk/tags
-FROM google/cloud-sdk
+FROM google/cloud-sdk:313.0.0
 
 # https://releases.hashicorp.com/terraform/
 ENV TERRAFORM_VERSION=0.13.5
